@@ -1,0 +1,140 @@
+.top-background {
+    width: 100%;
+    height: 180px;
+    background: rgba(133, 171, 122, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.home-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.home-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #28a745;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+
+.home-button:hover {
+    background-color: #218838;
+}
+
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Her bir ürün kartının stilini tanımlar. */
+.product-card {
+    width: 100%;
+    max-width: 388px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+    display: block;
+}
+
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+
+.prev-btn {
+    left: 10px;
+}
+
+
+.next-btn {
+    right: 10px;
+}
+
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin: 14px 12px 8px;
+    line-height: 1.3;
+}
+
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 14px 16px;
+}
